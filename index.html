@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laura GOURMET - 72h de Grillarde | Faites un Don</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="assets/logo.jpeg" alt="Laura GOURMET Logo" class="logo-img">
+                <span class="logo-text">Laura GOURMET</span>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-menu-wrapper" id="navMenuWrapper">
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Accueil</a></li>
+                    <li><a href="#about" class="nav-link">À propos</a></li>
+                    <li><a href="#event" class="nav-link">L'événement</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="btn-donate-nav" id="btnDonateNav">Faire un Don</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="video-background">
+            <video autoplay muted loop playsinline>
+                <source src="assets/video-grillarde.mp4" type="video/mp4">
+                <!-- Votre vidéo de grillade en arrière-plan -->
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        <div class="hero-content" data-parallax>
+            <h1 class="hero-title">
+                <span class="title-line">72h de</span>
+                <span class="title-line highlight">Grillarde</span>
+            </h1>
+            <p class="hero-subtitle">Du 17 au 21 - Place de l'Amazone</p>
+            <p class="hero-description">
+                Un événement culinaire exceptionnel qui célèbre l'art de la grillade. 
+                Rejoignez-nous pour vivre une expérience gastronomique unique et soutenez 
+                <strong>Laura GOURMET</strong> dans cette aventure.
+            </p>
+            <button class="btn-donate-hero" id="btnDonateHero">
+                <span>Soutenir l'événement</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about" data-parallax>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Un Événement Culinaire Hors du Commun</h2>
+                <p class="section-subtitle">Du 17 au 21 - Place de l'Amazone</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead-text">
+                        Les <strong>72h de Grillarde</strong> se dérouleront du <strong>17 au 21</strong> à la 
+                        <strong>Place de l'Amazone</strong>. C'est une célébration de l'art de la grillade, 
+                        une ode à la gastronomie locale, et un hommage aux traditions culinaires qui nous rassemblent.
+                    </p>
+                    <p>
+                        Organisé avec passion par <strong>Laura GOURMET</strong>, cet événement unique en son genre 
+                        transforme la Place de l'Amazone en un véritable temple de la gastronomie. Pendant ces jours 
+                        intenses, nos chefs experts partagent leurs secrets, leurs techniques et leur amour pour la 
+                        grillade authentique.
+                    </p>
+                    <p>
+                        Chaque moment est pensé pour éveiller vos sens : l'odeur alléchante des grillades, 
+                        le crépitement du feu, les saveurs qui explosent en bouche. C'est une expérience 
+                        immersive qui marque les esprits et crée des souvenirs indélébiles.
+                    </p>
+                    <p>
+                        Votre générosité est le carburant qui permet à cet événement d'exister et de grandir. 
+                        Chaque contribution, qu'elle soit en espèce ou en nature, nous aide à maintenir l'excellence 
+                        et à faire rayonner la gastronomie locale.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">72</div>
+                        <div class="stat-label">Heures de grillade</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100+</div>
+                        <div class="stat-label">Participants attendus</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Recettes uniques</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Section -->
+    <section class="event" id="event" data-parallax>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Ce Qui Vous Attend</h2>
+                <p class="section-subtitle">Une expérience multisensorielle unique</p>
+            </div>
+            <div class="event-grid">
+                <div class="event-card">
+                    <div class="event-icon">🔥</div>
+                    <h3>Grillades d'Exception</h3>
+                    <p>
+                        Savourez des grillades préparées selon des techniques ancestrales et modernes. 
+                        Nos chefs maîtrisent l'art de la cuisson au feu de bois pour révéler des saveurs 
+                        incomparables qui éveillent tous vos sens.
+                    </p>
+                </div>
+                <div class="event-card">
+                    <div class="event-icon">👨‍🍳</div>
+                    <h3>Ateliers Interactifs</h3>
+                    <p>
+                        Participez à des ateliers culinaires où vous apprendrez les techniques secrètes 
+                        de la grillade. De la préparation à la cuisson, découvrez les astuces des professionnels 
+                        et repartez avec de nouvelles compétences.
+                    </p>
+                </div>
+                <div class="event-card">
+                    <div class="event-icon">🎵</div>
+                    <h3>Ambiance Conviviale</h3>
+                    <p>
+                        Immergez-vous dans une atmosphère chaleureuse et festive. Musique, animations, 
+                        partage et convivialité sont au rendez-vous pour créer des moments inoubliables 
+                        autour de la table.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" data-parallax>
+        <div class="container">
+            <h2 class="cta-title">Votre Soutien Est Essentiel</h2>
+            <p class="cta-text">
+                Les <strong>72h de Grillarde</strong> du <strong>17 au 21 à la Place de l'Amazone</strong> ne peuvent 
+                exister sans votre générosité. Chaque contribution, qu'elle soit financière ou en nature, est un pas 
+                de plus vers la réussite de cet événement unique.
+            </p>
+            <p class="cta-subtext">
+                Rejoignez une communauté passionnée qui croit en la valeur de la gastronomie et du partage.
+            </p>
+            <button class="btn-donate-cta" id="btnDonateCta">Contribuer Maintenant</button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contactez-Nous</h2>
+                <p class="section-subtitle">Une question ? Besoin d'informations ? N'hésitez pas à nous contacter</p>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <div>
+                        <h3>Téléphone</h3>
+                        <p>+229 67 44 84 41</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">💬</div>
+                    <div>
+                        <h3>WhatsApp</h3>
+                        <a href="https://wa.me/22967448441" target="_blank">Envoyer un message</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Laura GOURMET - 72h de Grillarde. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Donation Modal -->
+    <div class="modal-overlay" id="donationModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal">&times;</button>
+            <div class="modal-header">
+                <h2>Faire un Don</h2>
+                <p>Choisissez le type de don que vous souhaitez effectuer</p>
+            </div>
+            <div class="donation-options">
+                <div class="donation-option" id="donationCash">
+                    <div class="option-icon">💰</div>
+                    <h3>Don en Espèce</h3>
+                    <p>Paiement via Mobile Money (Momo)</p>
+                    <button class="btn-option">Choisir</button>
+                </div>
+                <div class="donation-option" id="donationNature">
+                    <div class="option-icon">🎁</div>
+                    <h3>Don en Nature</h3>
+                    <p>Contactez-nous directement via WhatsApp</p>
+                    <button class="btn-option">Choisir</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Payment Modal (Cash) -->
+    <div class="modal-overlay" id="paymentModal">
+        <div class="modal-content payment-modal">
+            <button class="modal-close" id="closePaymentModal">&times;</button>
+            <div class="modal-header">
+                <h2>Don en Espèce</h2>
+                <p>Effectuez votre paiement via Mobile Money (Momo)</p>
+            </div>
+            <div class="momo-payment-info">
+                <div class="momo-icon">📱</div>
+                <div class="payment-instructions">
+                    <h3>Instructions de paiement</h3>
+                    <p class="instruction-text">
+                        Veuillez effectuer votre dépôt sur le numéro Mobile Money suivant :
+                    </p>
+                    <div class="momo-details">
+                        <div class="momo-item">
+                            <span class="momo-label">Numéro Mobile Money :</span>
+                            <span class="momo-value">
+                                <span id="momoNumber">+229 01 67 44 84 41</span>
+                                <button class="btn-copy" id="copyMomoNumber" title="Copier le numéro">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                    </svg>
+                                </button>
+                            </span>
+                        </div>
+                        <div class="momo-item">
+                            <span class="momo-label">Nom au dépôt :</span>
+                            <span class="momo-value">
+                                <span id="momoName">Amoussouga gwladys Laurane</span>
+                                <button class="btn-copy" id="copyMomoName" title="Copier le nom">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                    </svg>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="momo-note">
+                        <p><strong>Important :</strong> Utilisez exactement ce nom lors de votre dépôt pour faciliter l'identification de votre don.</p>
+                    </div>
+                    <button class="btn-confirm-payment" id="btnConfirmPayment">
+                        J'ai effectué le paiement
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Thank You Modal -->
+    <div class="modal-overlay" id="thankYouModal">
+        <div class="modal-content thank-you-modal">
+            <div class="thank-you-content">
+                <div class="thank-you-icon">🙏</div>
+                <h2>Merci pour votre générosité !</h2>
+                <p class="thank-you-message">
+                    Nous vous remercions chaleureusement d'avoir soutenu <strong>Laura GOURMET</strong> 
+                    pour les <strong>72h de Grillarde</strong>. Votre contribution nous permet de continuer 
+                    à créer des moments exceptionnels autour de la gastronomie.
+                </p>
+                <p class="thank-you-submessage">
+                    Votre don fait toute la différence. Nous vous tiendrons informé de l'utilisation 
+                    de votre contribution.
+                </p>
+                <button class="btn-close-thanks" id="closeThankYouModal">Fermer</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- KkiaPay SDK - Décommentez et ajoutez votre script si nécessaire -->
+    <!-- <script src="https://cdn.kkiapay.me/k.js"></script> -->
+    <script src="script.js"></script>
+</body>
+</html>
+
