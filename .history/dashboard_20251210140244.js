@@ -1,6 +1,6 @@
 // Dashboard Password (Change this to your desired password)
 // In production, this should be stored securely on a backend
-const DASHBOARD_PASSWORD = 'laura2026'; // Change this password!
+const DASHBOARD_PASSWORD = 'laura2024'; // Change this password!
 
 // Mobile menu toggle
 const mobileMenuToggle = document.getElementById('mobileMenuToggle');
