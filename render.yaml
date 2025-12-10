@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: laura-gourmet-dons
+    env: static
+    buildCommand: ""
+    staticPublishPath: .
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+
+

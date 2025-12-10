@@ -184,11 +184,18 @@ body {
     transition: var(--transition);
     box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
     white-space: nowrap;
+    position: relative;
+    z-index: 10;
+    pointer-events: auto;
 }
 
 .btn-donate-nav:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+}
+
+.btn-donate-nav:active {
+    transform: translateY(0);
 }
 
 /* Hero Section */
@@ -291,11 +298,18 @@ body {
     box-shadow: 0 8px 25px rgba(255, 107, 53, 0.4);
     text-transform: uppercase;
     letter-spacing: 1px;
+    position: relative;
+    z-index: 10;
+    pointer-events: auto;
 }
 
 .btn-donate-hero:hover {
     transform: translateY(-3px) scale(1.05);
     box-shadow: 0 12px 35px rgba(255, 107, 53, 0.5);
+}
+
+.btn-donate-hero:active {
+    transform: translateY(-1px) scale(1.02);
 }
 
 .scroll-indicator {
@@ -369,7 +383,8 @@ section {
 /* About Section */
 .about {
     background: var(--light-color);
-    padding: 80px 0;
+    padding: 60px 0;
+    margin: 0;
 }
 
 .about-content {
@@ -435,7 +450,8 @@ section {
 /* Event Section */
 .event {
     background: var(--white);
-    padding: 80px 0;
+    padding: 60px 0;
+    margin: 0;
 }
 
 .event-grid {
@@ -479,61 +495,11 @@ section {
     flex-grow: 1;
 }
 
-/* CTA Section */
-.cta-section {
-    background: var(--gradient-2);
-    color: var(--white);
-    text-align: center;
-    padding: 80px 0;
-}
-
-.cta-title {
-    font-size: clamp(2rem, 5vw, 3rem);
-    margin-bottom: 1.5rem;
-    color: var(--white);
-}
-
-.cta-text {
-    font-size: clamp(1rem, 2vw, 1.2rem);
-    margin-bottom: 1rem;
-    opacity: 0.95;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.8;
-}
-
-.cta-subtext {
-    font-size: clamp(0.9rem, 1.5vw, 1rem);
-    margin-bottom: 2.5rem;
-    opacity: 0.85;
-    font-style: italic;
-}
-
-.btn-donate-cta {
-    background: var(--gradient-1);
-    color: var(--white);
-    border: none;
-    padding: 18px 45px;
-    border-radius: 50px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: var(--transition);
-    box-shadow: 0 8px 25px rgba(255, 107, 53, 0.4);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.btn-donate-cta:hover {
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 12px 35px rgba(255, 107, 53, 0.5);
-}
-
 /* Contact Section */
 .contact {
     background: var(--light-color);
-    padding: 80px 0;
+    padding: 60px 0;
+    margin-top: 0;
 }
 
 .contact-info {
@@ -703,12 +669,19 @@ section {
     cursor: pointer;
     transition: var(--transition);
     border: 2px solid transparent;
+    position: relative;
+    z-index: 1;
+    pointer-events: auto;
 }
 
 .donation-option:hover {
     transform: translateY(-5px);
     border-color: var(--primary-color);
     box-shadow: var(--shadow);
+}
+
+.donation-option:active {
+    transform: translateY(-2px);
 }
 
 .option-icon {
@@ -1491,6 +1464,81 @@ section {
         padding: 15px 30px;
         font-size: 1rem;
     }
+
+    .donor-form-modal {
+        max-width: 100%;
+        margin: 10px;
+    }
+
+    .donor-form {
+        gap: 1.2rem;
+    }
+}
+
+/* Donor Form Modal */
+.donor-form-modal {
+    max-width: 500px;
+}
+
+.donor-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.donor-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.donor-form label {
+    font-weight: 600;
+    color: var(--text-dark);
+    font-size: 0.95rem;
+}
+
+.donor-form .required {
+    color: var(--primary-color);
+}
+
+.donor-form input {
+    padding: 12px 16px;
+    border: 2px solid var(--light-color);
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+
+.donor-form input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+}
+
+.donor-form small {
+    color: var(--text-light);
+    font-size: 0.85rem;
+}
+
+.btn-submit-form {
+    background: var(--gradient-1);
+    color: var(--white);
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    font-family: inherit;
+    margin-top: 0.5rem;
+}
+
+.btn-submit-form:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
 }
 
 /* Fix for parallax on mobile */

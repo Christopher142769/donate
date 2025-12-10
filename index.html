@@ -39,11 +39,12 @@
         <div class="video-background">
             <video autoplay muted loop playsinline>
                 <source src="assets/video-grillarde.mp4" type="video/mp4">
+                <!-- Si la vidéo n'existe pas, un fond de couleur sera affiché -->
                 <!-- Votre vidéo de grillade en arrière-plan -->
             </video>
             <div class="video-overlay"></div>
         </div>
-        <div class="hero-content" data-parallax>
+        <div class="hero-content">
             <h1 class="hero-title">
                 <span class="title-line">72h de</span>
                 <span class="title-line highlight">Grillarde</span>
@@ -69,7 +70,7 @@
     </section>
 
     <!-- About Section -->
-    <section class="about" id="about" data-parallax>
+    <section class="about" id="about">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Un Événement Culinaire Hors du Commun</h2>
@@ -118,7 +119,7 @@
     </section>
 
     <!-- Event Section -->
-    <section class="event" id="event" data-parallax>
+    <section class="event" id="event">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Ce Qui Vous Attend</h2>
@@ -153,22 +154,6 @@
                     </p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta-section" data-parallax>
-        <div class="container">
-            <h2 class="cta-title">Votre Soutien Est Essentiel</h2>
-            <p class="cta-text">
-                Les <strong>72h de Grillarde</strong> du <strong>17 au 21 à la Place de l'Amazone</strong> ne peuvent 
-                exister sans votre générosité. Chaque contribution, qu'elle soit financière ou en nature, est un pas 
-                de plus vers la réussite de cet événement unique.
-            </p>
-            <p class="cta-subtext">
-                Rejoignez une communauté passionnée qui croit en la valeur de la gastronomie et du partage.
-            </p>
-            <button class="btn-donate-cta" id="btnDonateCta">Contribuer Maintenant</button>
         </div>
     </section>
 
@@ -230,6 +215,33 @@
         </div>
     </div>
 
+    <!-- Donor Info Modal (Cash) -->
+    <div class="modal-overlay" id="donorInfoModalCash">
+        <div class="modal-content donor-form-modal">
+            <button class="modal-close" id="closeDonorInfoModalCash">&times;</button>
+            <div class="modal-header">
+                <h2>Informations du Donateur</h2>
+                <p>Veuillez remplir vos informations pour finaliser votre don</p>
+            </div>
+            <form class="donor-form" id="donorFormCash">
+                <div class="form-group">
+                    <label for="firstNameCash">Prénom <span class="required">*</span></label>
+                    <input type="text" id="firstNameCash" name="firstName" required placeholder="Votre prénom">
+                </div>
+                <div class="form-group">
+                    <label for="lastNameCash">Nom <span class="required">*</span></label>
+                    <input type="text" id="lastNameCash" name="lastName" required placeholder="Votre nom">
+                </div>
+                <div class="form-group">
+                    <label for="contactCash">Contact <span class="required">*</span></label>
+                    <input type="text" id="contactCash" name="contact" required placeholder="Email ou numéro de téléphone">
+                    <small>Email ou numéro de téléphone</small>
+                </div>
+                <button type="submit" class="btn-submit-form">Continuer vers le paiement</button>
+            </form>
+        </div>
+    </div>
+
     <!-- Payment Modal (Cash) -->
     <div class="modal-overlay" id="paymentModal">
         <div class="modal-content payment-modal">
@@ -282,6 +294,33 @@
         </div>
     </div>
 
+    <!-- Donor Info Modal (Nature) -->
+    <div class="modal-overlay" id="donorInfoModalNature">
+        <div class="modal-content donor-form-modal">
+            <button class="modal-close" id="closeDonorInfoModalNature">&times;</button>
+            <div class="modal-header">
+                <h2>Informations du Donateur</h2>
+                <p>Veuillez remplir vos informations pour votre don en nature</p>
+            </div>
+            <form class="donor-form" id="donorFormNature">
+                <div class="form-group">
+                    <label for="firstNameNature">Prénom <span class="required">*</span></label>
+                    <input type="text" id="firstNameNature" name="firstName" required placeholder="Votre prénom">
+                </div>
+                <div class="form-group">
+                    <label for="lastNameNature">Nom <span class="required">*</span></label>
+                    <input type="text" id="lastNameNature" name="lastName" required placeholder="Votre nom">
+                </div>
+                <div class="form-group">
+                    <label for="contactNature">Contact <span class="required">*</span></label>
+                    <input type="text" id="contactNature" name="contact" required placeholder="Email ou numéro de téléphone">
+                    <small>Email ou numéro de téléphone</small>
+                </div>
+                <button type="submit" class="btn-submit-form">Continuer vers WhatsApp</button>
+            </form>
+        </div>
+    </div>
+
     <!-- Thank You Modal -->
     <div class="modal-overlay" id="thankYouModal">
         <div class="modal-content thank-you-modal">
@@ -302,8 +341,8 @@
         </div>
     </div>
 
-    <!-- KkiaPay SDK - Décommentez et ajoutez votre script si nécessaire -->
-    <!-- <script src="https://cdn.kkiapay.me/k.js"></script> -->
+    <!-- API Configuration -->
+    <script src="api-config.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

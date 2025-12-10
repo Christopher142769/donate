@@ -30,3 +30,4 @@ const CONFIG = {
 // 2. Utilisez CONFIG.KKIAPAY_PUBLIC_KEY au lieu de la valeur en dur
 
 
+
