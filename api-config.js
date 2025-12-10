@@ -1,6 +1,6 @@
 // Configuration de l'API Backend
-// Pour le développement local avec MongoDB local
-window.API_BASE_URL = 'http://localhost:3000/api';
+// Backend hébergé sur Render
+window.API_BASE_URL = 'https://laura-gourmet-backend.onrender.com/api';
 
 // Si pas d'URL définie, le système utilisera localStorage comme fallback
 if (!window.API_BASE_URL) {
